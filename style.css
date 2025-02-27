@@ -1,0 +1,96 @@
+*{
+    font-family: "Roboto", serif;
+    background-color: #1F2937;
+    margin: 2px;
+    padding: 0;
+
+}
+h1{
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+small{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+div{
+    outline: auto;
+}
+img{
+    height: 200px;
+    width: auto;
+}
+/*header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.header .right ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+/*only bodydiv*/
+.bodydiv{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*first container*/
+.bodydiv .first-container{
+    display: flex;
+}
+.bodydiv .first-container .first-item-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* second container*/
+.bodydiv .second-container{
+    display: flex;
+    flex-direction: column;
+}
+.bodydiv .second-container .title{
+    display: flex;
+    justify-content: center;
+}
+.bodydiv .second-container .four-item-container{
+    display: flex;
+    justify-content: center;
+}
+.bodydiv .second-container .four-item-container .imgsubtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15vw;
+    height: auto;
+}
+.bodydiv .second-container .four-item-container img{
+    max-width: 15vw;
+    height: auto;
+}
+
+/*third container*/
+.bodydiv .third-container{
+    display: flex;
+    flex-direction: column;
+}
+.bodydiv .third-container .start{
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.bodydiv .third-container .back{
+    display: flex;
+    justify-content: end;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
