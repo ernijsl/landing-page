@@ -5,49 +5,93 @@
     padding: 0;
 
 }
+
 h1{
-    font-size: 48px;
-    color: #F9FAF8;
-    font-weight: 900;
+    font-size: clamp(24px, 6vw, 48px);
 }
+
+p{
+    font-size: clamp(12px, 3vw, 24px);
+}
+
 small{
-    font-size: 18px;
+    font-size: clamp(12px, 3vw, 24px);
     color: #E5E7EB;
 }
 div{
     outline: auto;
 }
 img{
-    height: 200px;
-    width: auto;
+    width: 100%; /* Image will scale according to its container's width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: clamp(150px, 50vw, 800px); /* Scale based on 50% of viewport width, but don't go smaller than 150px or larger than 800px */
+    object-fit: contain;
 }
 /*header*/
 .header{
     display: flex;
     justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .header .right ul{
     display: flex;
     list-style-type: none;
     gap: 10px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: clamp(12px, 3vw, 24px);
+}
+
+.header .left h1{
+    font-size: clamp(24px, 6vw, 48px);
+    color: #F9FAF8;
+    font-weight: 900;
 }
 /*only bodydiv*/
 .bodydiv{
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /*first container*/
 .bodydiv .first-container{
     display: flex;
+    height: auto;
 }
 .bodydiv .first-container .first-item-container{
     display: flex;
     flex-direction: column;
+    width: 50%;
+}
+
+.bodydiv .first-container .first-item-container h1{
+    font-size: clamp(24px, 6vw, 48px);
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.bodydiv .first-container .first-item-container small{
+    font-size: clamp(12px, 3vw, 24px);
+    color: #E5E7EB;
+}
+.bodydiv .first-container .first-item-container button{
+    background-color: rgb(62, 62, 192);
+    color: white;
+    border-radius: 10px;
+    border-color: rgb(62, 62, 192);
+    max-width: clamp(100px, 50vw, 100px); /* Scale based on 50% of viewport width, but don't go smaller than 150px or larger than 800px */
+    height: 40px;
+    object-fit: contain;
+}
+.bodydiv .first-container .second-item-container{
+    width: 50%;
 }
 
 
@@ -60,20 +104,33 @@ img{
     display: flex;
     justify-content: center;
 }
+
+.bodydiv .second-container .title h1{
+    font-size: clamp(24px, 6vw, 48px);
+    color: #F9FAF8;
+    font-weight: 900;
+}
 .bodydiv .second-container .four-item-container{
     display: flex;
     justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .bodydiv .second-container .four-item-container .imgsubtext{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 15vw;
-    height: auto;
-}
-.bodydiv .second-container .four-item-container img{
+    align-items: center;
+    min-width: 250px;
     max-width: 15vw;
     height: auto;
+    height: auto;
+}
+
+.bodydiv .second-container .four-item-container .imgsubtext p{
+    font-size: clamp(12px, 3vw, 24px);
+    color: #E5E7EB;
 }
 
 /*third container*/
@@ -81,16 +138,20 @@ img{
     display: flex;
     flex-direction: column;
 }
-.bodydiv .third-container .start{
+.bodydiv .third-container .two-item-container .start{
     display: flex;
     justify-content: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    font-size: clamp(12px, 3vw, 24px);
+    color: #E5E7EB;
 }
-.bodydiv .third-container .back{
+.bodydiv .third-container .two-item-container .back{
     display: flex;
     justify-content: end;
-    margin-left: 5%;
-    margin-right: 5%;
-
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: clamp(12px, 3vw, 24px);
+    color: #E5E7EB;
 }
